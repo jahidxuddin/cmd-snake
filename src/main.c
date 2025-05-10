@@ -53,8 +53,6 @@ void init_game(GameState *game_state)
 void game_loop(GameState *game_state)
 {
   uint32_t last_move_time = get_time_ms();
-  int initial_render = 1;
-
   while (1)
   {
     handle_input();
@@ -65,11 +63,6 @@ void game_loop(GameState *game_state)
       move_snake(game_state);
       render_game(game_state);
       last_move_time = current_time;
-    }
-    else if (initial_render)
-    {
-      render_game(game_state);
-      initial_render = 0;
     }
 
     sleep(10);

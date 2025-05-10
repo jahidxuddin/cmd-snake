@@ -3,4 +3,6 @@
 
 #include "main.c"
 
+void handle_input();
+
 #endif
