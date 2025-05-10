@@ -1,7 +1,7 @@
 #ifndef INPUT_H
 #define INPUT_H
 
-#include "main.c"
+#include "snake/snake.h"
 
 void handle_input();
 

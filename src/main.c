@@ -6,32 +6,12 @@
 #include <unistd.h>
 #endif
 
+#include "state/game_state.h"
 #include "world/world.h"
 #include "snake/snake.h"
 #include "food/food.h"
 #include "render/render.h"
 #include "input/input.h"
-
-#define WIDTH 30
-#define HEIGHT 20
-
-typedef struct
-{
-  int score;
-  World world;
-  SnakeSegment snake;
-  Food food;
-} GameState;
-
-typedef enum
-{
-  UP,
-  DOWN,
-  LEFT,
-  RIGHT
-} Direction;
-
-Direction current_direction = RIGHT;
 
 void sleep(int ms)
 {
@@ -74,5 +54,4 @@ int main()
   GameState game_state;
   init_game(&game_state);
   game_loop(&game_state);
-  return 0;
 }

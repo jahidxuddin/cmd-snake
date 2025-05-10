@@ -2,9 +2,9 @@
 
 void render_world(GameState *game_state)
 {
-  for (int y = 0; y < HEIGHT; y++)
+  for (int y = 0; y < 20; y++)
   {
-    for (int x = 0; x < WIDTH; x++)
+    for (int x = 0; x < 30; x++)
     {
       if (snake_contains(&game_state->snake, x, y))
       {

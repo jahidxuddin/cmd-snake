@@ -3,8 +3,8 @@
 void spawn_snake(GameState *game_state)
 {
   SnakeSegment *head = &game_state->snake;
-  head->x = WIDTH / 2;
-  head->y = HEIGHT / 2;
+  head->x = 30 / 2;
+  head->y = 20 / 2;
   head->next = NULL;
 }
 
@@ -47,7 +47,7 @@ void move_snake(GameState *game_state)
   }
 
   // Kollision mit Wand
-  if (new_x <= 0 || new_x >= WIDTH - 1 || new_y <= 0 || new_y >= HEIGHT - 1)
+  if (new_x <= 0 || new_x >= 30 - 1 || new_y <= 0 || new_y >= 20 - 1)
   {
     printf("Game Over!\n");
     exit(0);

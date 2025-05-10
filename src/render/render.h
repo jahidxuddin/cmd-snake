@@ -2,7 +2,8 @@
 #define RENDER_H
 
 #include <cstdio>
-#include "main.c"
+
+#include "state/game_state.h"
 
 void render_world(GameState *game_state);
 void render_game(GameState *game_state);

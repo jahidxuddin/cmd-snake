@@ -1,7 +1,9 @@
 #ifndef FOOD_H
 #define FOOD_H
 
-#include "main.c"
+#include <cstddef>
+
+#include "state/game_state.h"
 
 typedef struct
 {

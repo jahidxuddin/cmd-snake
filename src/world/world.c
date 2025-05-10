@@ -2,11 +2,11 @@
 
 void spawn_world(GameState *game_state)
 {
-  for (int y = 0; y < HEIGHT; y++)
+  for (int y = 0; y < 20; y++)
   {
-    for (int x = 0; x < WIDTH; x++)
+    for (int x = 0; x < 30; x++)
     {
-      if (x == 0 || x == WIDTH - 1 || y == 0 || y == HEIGHT - 1)
+      if (x == 0 || x == 30 - 1 || y == 0 || y == 20 - 1)
       {
         game_state->world.world[y][x] = '#';
       }
